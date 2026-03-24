@@ -1,5 +1,5 @@
 ## 硫化排程涉及表（实体类对应表）： 
-0、基础实体通用（所有业务表的实体继承）
+0、基础实体通用（所有业务表的实体继承）  
 1、硫化排程结果表：T_LH_SCHEDULE_RESULT
 2、硫化未排结果表：T_LH_UNSCHEDULED_RESULT
 3、模具交替计划表：T_LH_MOULD_CHANGE_PLAN
