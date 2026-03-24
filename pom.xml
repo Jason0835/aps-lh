@@ -14,8 +14,9 @@
         <module>aps-lh</module>
     </modules>
 
+    <!-- 统一管理版本 -->
     <dependencyManagement>
-        <!-- 统一管理版本 -->
+
     </dependencyManagement>
 
 </project>
