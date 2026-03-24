@@ -1,4 +1,4 @@
-## 硫化排程涉及表（实体类对应表）： 
+## 硫化排程涉及表（实体类对应表）：
 0、基础实体通用（所有业务表的实体继承）
 1、硫化排程结果表：T_LH_SCHEDULE_RESULT
 2、硫化未排结果表：T_LH_UNSCHEDULED_RESULT
@@ -21,7 +21,7 @@
 19、设备保养（精度）计划表：T_MDM_DEV_MAINTENANCE_PLAN
 
 
-## 硫化排程涉及实体 
+## 硫化排程涉及实体
 0、基础实体类
 package com.ruoyi.common.core.web.domain;
 
@@ -41,57 +41,57 @@ import org.apache.ibatis.type.JdbcType;
 import org.springframework.beans.BeanWrapperImpl;
 
 public class BaseEntity implements Serializable {
-	
+
     private static final long serialVersionUID = 1L;
     public static final String FIELD_CREATE_BY = "createBy";
     public static final String FIELD_CREATE_TIME = "createTime";
     public static final String FIELD_UPDATE_BY = "updateBy";
     public static final String FIELD_UPDATE_TIME = "updateTime";
-    
+
     @Excel(name = "ui.data.column.id")
     @TableId(value = "ID", type = IdType.AUTO)
     private Long id;
-    
-    public void setId(Long id) { this.id = id; } 
-    
-    @TableField(exist = false) 
-    private String searchValue; 
-    
-    @ApiModelProperty("创建者") 
-    @TableField(value = "CREATE_BY", fill = FieldFill.INSERT, jdbcType = JdbcType.VARCHAR) 
-    private String createBy; 
-    
-    @ApiModelProperty("创建时间") @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss") 
-    @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT, jdbcType = JdbcType.TIMESTAMP) 
-    private Date createTime; 
-    
-    @ApiModelProperty("更新者") 
-    @TableField(value = "UPDATE_BY", fill = FieldFill.INSERT_UPDATE, jdbcType = JdbcType.VARCHAR) 
-    private String updateBy; 
-    
-    @ApiModelProperty("更新时间") 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss") 
-    @TableField(value = "UPDATE_TIME", fill = FieldFill.INSERT_UPDATE, jdbcType = JdbcType.TIMESTAMP) 
-    private Date updateTime; 
-    
-    @ApiModelProperty("备注") 
-    @TableField("REMARK") 
-    private String remark; public void setIsDelete(Integer isDelete) { this.isDelete = isDelete; } 
-    
+
+    public void setId(Long id) { this.id = id; }
+
+    @TableField(exist = false)
+    private String searchValue;
+
+    @ApiModelProperty("创建者")
+    @TableField(value = "CREATE_BY", fill = FieldFill.INSERT, jdbcType = JdbcType.VARCHAR)
+    private String createBy;
+
+    @ApiModelProperty("创建时间") @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT, jdbcType = JdbcType.TIMESTAMP)
+    private Date createTime;
+
+    @ApiModelProperty("更新者")
+    @TableField(value = "UPDATE_BY", fill = FieldFill.INSERT_UPDATE, jdbcType = JdbcType.VARCHAR)
+    private String updateBy;
+
+    @ApiModelProperty("更新时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @TableField(value = "UPDATE_TIME", fill = FieldFill.INSERT_UPDATE, jdbcType = JdbcType.TIMESTAMP)
+    private Date updateTime;
+
+    @ApiModelProperty("备注")
+    @TableField("REMARK")
+    private String remark; public void setIsDelete(Integer isDelete) { this.isDelete = isDelete; }
+
     public void setRowState(RowStateEnum rowState) { this.rowState = rowState; }
 
-    
+
     public Long getId() {
         return this.id;
     }
 
-    
+
     @Excel(name = "ui.data.column.isDelete")
     @ApiModelProperty("删除标识：0--正常，1-删除")
     @TableField("IS_DELETE")
-    private Integer isDelete = Integer.valueOf(0); 
-    
-    @ApiModelProperty("前端查询条件参数") @TableField(exist = false) private Map<String, Object> params; 
+    private Integer isDelete = Integer.valueOf(0);
+
+    @ApiModelProperty("前端查询条件参数") @TableField(exist = false) private Map<String, Object> params;
     public Integer getIsDelete() { return this.isDelete; }
 
 
@@ -100,21 +100,21 @@ public class BaseEntity implements Serializable {
         return this.rowState;
     }
 
-    
+
     public void setBaseVale(Long id) {
         if (id == null) {
-            
+
             setCreateBy(SecurityUtils.getUsername());
             setCreateTime(new Date());
 
-            
+
             setUpdateBy(getCreateBy());
             setUpdateTime(getCreateTime());
         } else {
-            
+
             setUpdateBy(SecurityUtils.getUsername());
             setUpdateTime(new Date());
-        } 
+        }
     }
 
     public void setFieldValueByFieldName(String fieldName, Object value) {
@@ -132,67 +132,67 @@ public class BaseEntity implements Serializable {
     }
 
 
-    
+
     public String getSearchValue() {
         return this.searchValue;
     }
 
-    
+
     public void setSearchValue(String searchValue) {
         this.searchValue = searchValue;
     }
 
-    
+
     public String getCreateBy() {
         return this.createBy;
     }
 
-    
+
     public void setCreateBy(String createBy) {
         this.createBy = createBy;
     }
 
-    
+
     public Date getCreateTime() {
         return this.createTime;
     }
 
-    
+
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
-    
+
     public String getUpdateBy() {
         return this.updateBy;
     }
 
-    
+
     public void setUpdateBy(String updateBy) {
         this.updateBy = updateBy;
     }
 
-    
+
     public Date getUpdateTime() {
         return this.updateTime;
     }
 
-    
+
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
 
-    
+
     public String getRemark() {
         return this.remark;
     }
 
-    
+
     public void setRemark(String remark) {
         this.remark = remark;
     }
 
-    
+
     public Map<String, Object> getParams() {
         if (this.params == null)
         {
@@ -201,7 +201,7 @@ public class BaseEntity implements Serializable {
         return this.params;
     }
 
-    
+
     public void setParams(Map<String, Object> params) {
         this.params = params;
     }
@@ -235,7 +235,7 @@ import java.util.Date;
 public class LhScheduleResult extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    
+
 
     /**
      * 分厂编号
@@ -3295,43 +3295,43 @@ public class LhShiftFinishQty implements Serializable {
 		 * 一班完成量
 		 */
 		private Integer class1FinishQty = 0;
-		
+
 		/**
 		 * 二班完成量
 		 */
 		private Integer class2FinishQty = 0;
-		
+
 		/**
 		 * 三班完成量
 		 */
 		private Integer class3FinishQty = 0;
-		
+
 		/**
 		 * 四班完成量
 		 */
 		private Integer class4FinishQty = 0;
-		
+
 		/**
 		 * 五班完成量
 		 */
 		private Integer class5FinishQty = 0;
-		
+
 		/**
 		 * 六班完成量
 		 */
 		private Integer class6FinishQty = 0;
-		
+
 		/**
 		 * 七班完成量
 		 */
 		private Integer class7FinishQty = 0;
-		
+
 		/**
 		 * 八班完成量
 		 */
 		private Integer class8FinishQty = 0;
 
-    
+
     /**
      * 备注
      */
