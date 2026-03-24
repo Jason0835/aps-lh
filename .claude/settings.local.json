@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.weather.com.cn)"
+      "WebFetch(domain:www.weather.com.cn)",
+      "Bash(find /Users/Jason/IdeaProjects/test/aps-lh-parent -type f -name README*)",
+      "Bash(:)",
+      "Bash(find /Users/Jason/IdeaProjects/test/aps-lh-parent -name *.sh -o -name Makefile)"
     ]
   }
 }
