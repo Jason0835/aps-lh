@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ruoyi:ruoyi-api-activiti:3.5.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/rps/com/ruoyi/ruoyi-api-activiti/3.5.2-SNAPSHOT/ruoyi-api-activiti-3.5.2-20260313.101641-25.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/rps/com/ruoyi/ruoyi-api-activiti/3.5.2-SNAPSHOT/ruoyi-api-activiti-3.5.2-20260313.101641-25-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/rps/com/ruoyi/ruoyi-api-activiti/3.5.2-SNAPSHOT/ruoyi-api-activiti-3.5.2-20260313.101641-25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

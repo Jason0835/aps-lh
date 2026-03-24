@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.zlt.aps:aps-common-core:1.0.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/rps/com/zlt/aps/aps-common-core/1.0.3-SNAPSHOT/aps-common-core-1.0.3-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/rps/com/zlt/aps/aps-common-core/1.0.3-SNAPSHOT/aps-common-core-1.0.3-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/rps/com/zlt/aps/aps-common-core/1.0.3-SNAPSHOT/aps-common-core-1.0.3-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
