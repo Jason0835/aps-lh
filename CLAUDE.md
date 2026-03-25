@@ -185,3 +185,6 @@ No tests are currently present in the codebase. When adding tests:
 - Project follows standard Java conventions
 - Refer to `doc/Java编程规范-代码规范.md` for coding standards (if available)
 - MyBatis mappers use XML configuration (check `src/main/resources/mapper/`)
+
+## 回答方式
+- 使用中文
